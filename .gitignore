@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+__diff_output__/
+dist
+.idea
+*.iml
+
+temp
+# E2E Testing reports
+test/reports/allure-results/
+test/reports/errorShots/
+coverage
+.nyc_output
+cypress/screenshots
+cypress/screenshots-diffs
+cypress/fixtures/
+.eslintcache

@@ -1,0 +1,9 @@
+{
+  "name": "@alacrity/app",
+  "version": "1.0.0",
+  "description": "Alacrity Law Client Facing App",
+  "private": true,
+  "dependencies": {
+    "@alacrity/shared": "workspace:1.0.0"
+  }
+}

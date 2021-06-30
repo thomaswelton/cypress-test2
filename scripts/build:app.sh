@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [[ -z "${API_URL}" ]]; then
+	export API_URL="http://localhost:3000"
+fi
+
+if [[ -z "${ROOT_DIR}" ]]; then
+	export ROOT_DIR="app"
+fi
+
+if [[ -z "${NODE_ENV}" ]]; then
+	export NODE_ENV="production"
+fi
+
+rm -rf ./dist/app; \
+NODE_ENV=$NODE_ENV
+API_URL=$API_URL \
+ROOT_DIR=$ROOT_DIR \
+./node_modules/.bin/webpack --config webpack/webpack.production.js;

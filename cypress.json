@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://localhost:3050",
+  "defaultCommandTimeout": 15000,
+  "experimentalFetchPolyfill": true,
+  "pageLoadTimeout": 15000,
+  "trashAssetsBeforeRuns": false,
+  "video": false,
+  "viewportHeight": 1080,
+  "viewportWidth": 1920
+}

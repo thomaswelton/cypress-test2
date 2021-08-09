@@ -14,6 +14,7 @@ importers:
       '@babel/preset-flow': 7.14.5
       '@babel/preset-react': 7.14.5
       '@babel/runtime': 7.14.6
+      '@cypress/webpack-preprocessor': ^5.9.1
       '@hot-loader/react-dom': 17.0.1
       '@sentry/browser': 6.7.2
       '@sentry/webpack-plugin': 1.15.1
@@ -72,6 +73,7 @@ importers:
       '@babel/preset-flow': 7.14.5_@babel+core@7.14.6
       '@babel/preset-react': 7.14.5_@babel+core@7.14.6
       '@babel/runtime': 7.14.6
+      '@cypress/webpack-preprocessor': 5.9.1_a8e06bb2d8c11049217cf6795aa41362
       '@hot-loader/react-dom': 17.0.1_react@17.0.2
       '@sentry/webpack-plugin': 1.15.1
       babel-loader: 8.2.2_1ef96c0ff5bf278057a4bc2ae1f672a2
@@ -1399,6 +1401,25 @@ packages:
       uuid: 3.4.0
     dev: true
 
+  /@cypress/webpack-preprocessor/5.9.1_a8e06bb2d8c11049217cf6795aa41362:
+    resolution: {integrity: sha512-cg1ikftIo7NdlRA8ocNSxWjHJlh1JlTkN9ZfXUuKWWcJgrEdYLjXk0UzY6gYbLLaFka4oIhN6SvL5Y/7iELvgg==}
+    peerDependencies:
+      '@babel/core': ^7.0.1
+      '@babel/preset-env': ^7.0.0
+      babel-loader: ^8.0.2
+      webpack: ^4 || ^5
+    dependencies:
+      '@babel/core': 7.14.6
+      '@babel/preset-env': 7.14.7_@babel+core@7.14.6
+      babel-loader: 8.2.2_1ef96c0ff5bf278057a4bc2ae1f672a2
+      bluebird: 3.7.2
+      debug: 4.3.2
+      lodash: 4.17.21
+      webpack: 5.40.0_webpack-cli@4.7.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@cypress/xvfb/1.2.4:
     resolution: {integrity: sha512-skbBzPggOVYCbnGgV+0dmBdW/s77ZkAOXIC1knS8NagwDjBrNC1LuXtQJeiN6l+m7lzmHtaoUw/ctJKdqkG57Q==}
     dependencies:
@@ -2670,6 +2691,18 @@ packages:
     dependencies:
       ms: 2.1.2
       supports-color: 8.1.1
+    dev: true
+
+  /debug/4.3.2:
+    resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
     dev: true
 
   /debug/4.3.2_supports-color@8.1.1:
